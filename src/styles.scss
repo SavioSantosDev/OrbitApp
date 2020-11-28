@@ -1,1 +1,18 @@
-/* You can add global styles to this file, and also import other style files */
+@import "./styles/bootstrap";
+
+@font-face {
+  font-family: 'CircularStd';
+  src: url('./assets/fonts/CircularStd-Book.otf') format('truetype');
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'CircularStd';
+  src: url('./assets/fonts/CircularStd-Bold.otf') format('truetype');
+  font-weight: bold;
+}
+
+
+body {
+  font-size: clamp(16px, 1.9vw, 12px);
+  line-height: clamp(16px, 1.9vw, 12px);
+}
