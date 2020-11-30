@@ -20,6 +20,27 @@ $secondary:     #052B4E;
 $light:         #F0F4F7;
 $dark:          #031627;
 
+// Não são do Bootstrap
+$in-light:  #525457;
+$in-dark:  #B5B8BA;
+
+$theme-colors: ();
+$theme-colors: map-merge(
+  (
+    "primary":        $primary,
+    "secondary":      $secondary,
+    // "success":    $success,
+    // "info":       $info,
+    // "warning":    $warning,
+    // "danger":     $danger,
+    "light":          $light,
+    "dark":           $dark,
+    "in-dark":        $in-dark,
+    "in-light":       $in-light
+  ),
+  $theme-colors
+);
+
 
 $grid-breakpoints: (
   xs: 0,

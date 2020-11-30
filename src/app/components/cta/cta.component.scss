@@ -1,0 +1,10 @@
+@import "../../../styles/utilities";
+
+
+section {
+  flex-grow: 1;
+
+  @media (min-width: map-get($map: $grid-breakpoints, $key: lg)) {
+    background: url('../../../assets/images/iPhone_hand.png') 95% 100px/contain no-repeat;
+  }
+}

@@ -1,0 +1,22 @@
+@import "../../../styles/utilities";
+
+// Elemento flexionado
+.navbar {
+
+  .navbar-brand {
+    cursor: pointer;
+
+    svg {
+      max-width: 158px;
+      height: 32px;
+    }
+  }
+
+  .nav-link {
+    cursor: pointer;
+
+    &:hover:not(.active) { border-bottom: 1px solid $dark; }
+
+    &.active { border-bottom: 1px solid $primary; }
+  }
+}

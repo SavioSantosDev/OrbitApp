@@ -1,0 +1,63 @@
+@import "../../../styles/utilities";
+
+.address-card {
+
+  position: relative;
+
+  &::before {
+    content: '';
+    background: url('../../../assets/images/Brasil.png') right 48px/contain no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: .9;
+    z-index: 0;
+  }
+
+  & > div {
+    position: relative;
+    z-index: 1;
+  }
+}
+
+form {
+
+   .control {
+    position: relative;
+    margin-bottom: 1rem;
+
+    input, textarea {
+      width: 100%;
+      background-color: white;
+      border: 1px solid rgba($color: $in-light, $alpha: .3);
+
+      font-size: 1rem;
+      line-height: 1rem;
+      color: $in-light;
+      padding: 0 2rem;
+      height: 80px;
+      border-radius: 1rem;
+    }
+
+    textarea { height: 160px; padding: 2rem; }
+
+    label {
+      position: absolute;
+      color: $in-light;
+      top: 32px;
+      left: 2rem;
+      font-size: 1rem;
+      line-height: 1rem;
+      transition: .2s;
+    }
+
+    input:focus~label, textarea:focus~label {
+      top: 16px;
+      font-size: 12px;
+      color: $primary;
+    }
+  }
+
+}

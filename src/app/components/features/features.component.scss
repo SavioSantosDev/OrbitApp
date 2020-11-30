@@ -1,0 +1,52 @@
+@import "../../../styles/utilities";
+
+.slider-box {
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    background-color: $light;
+  }
+}
+
+.slider-img {
+  transform: translateY(-8%);
+}
+
+svg {
+
+  &.tick { flex-shrink: 0; }
+
+  &.tick, &.gear {
+    width: 24px;
+    height: 24px;
+
+    @media (min-width: map-get($map: $grid-breakpoints, $key: md)) {
+      width: 32px;
+      height: 32px;
+    }
+  }
+
+  &.arrow-left, &.arrow-right {
+    width: 32px;
+    height: 16px;
+  }
+}
+
+.dot {
+  cursor: pointer;
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
+  margin-right: 1rem;
+  background-color: $secondary;
+
+  &.active {
+    background-color: $primary;
+  }
+}

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+  <defs>
+    <style>
+      .white {
+        fill: #fff;
+      }
+
+      .primary {
+        fill: #0f8bfe;
+      }
+    </style>
+  </defs>
+  <title>play</title>
+  <g id="Camada_2" data-name="Camada 2">
+    <g id="orbit_app">
+      <g id="play">
+        <circle class="white" cx="24" cy="24" r="24"/>
+        <path class="primary" d="M31.6,22.8,19.8,16a1.4,1.4,0,0,0-2.1,1.2V30.8A1.4,1.4,0,0,0,19.8,32l11.8-6.8A1.4,1.4,0,0,0,31.6,22.8Z"/>
+      </g>
+    </g>
+  </g>
+</svg>

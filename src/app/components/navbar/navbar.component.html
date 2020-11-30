@@ -1,0 +1,35 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-white  shadow" #navbar>
+  <div class="container">
+
+    <div class="navbar-brand">
+      <svg>
+        <use xlink:href="#logo" />
+      </svg>
+    </div>
+
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#menu"
+      aria-controls="menu"
+      aria-label="Toggle navigation"
+      [attr.aria-expanded]="!menuCollapsed"
+      (click)="menuCollapsed = !menuCollapsed"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="menu" [collapse]="menuCollapsed" [isAnimated]="true">
+      <ul class="navbar-nav ml-auto d-flex align-items-center">
+        <li class="nav-item"><a (click)="onClickScroll('cta')" class="nav-link ml-3 active">Orbit App</a></li>
+        <li class="nav-item"><a (click)="onClickScroll('functionalities')" class="nav-link ml-3">Funcionalidades</a></li>
+        <li class="nav-item"><a (click)="onClickScroll('clients')" class="nav-link ml-3">Clientes</a></li>
+        <li class="nav-item"><a (click)="onClickScroll('pricing')" class="nav-link ml-3">Planos</a></li>
+        <li class="nav-item"><a (click)="onClickScroll('contact')" class="nav-link ml-3">Contato</a></li>
+        <li class="nav-item"><a class="ml-3 btn btn-primary">Cadastre-se</a></li>
+      </ul>
+    </div>
+
+  </div>
+</nav>

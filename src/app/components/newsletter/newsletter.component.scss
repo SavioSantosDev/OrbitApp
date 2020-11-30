@@ -1,0 +1,29 @@
+@import "../../../styles/utilities";
+
+section {
+  position: relative;
+  // background-color: rgba($color: $secondary, $alpha: .8);
+  background-color: $secondary;
+
+
+  &::before {
+    content: '';
+    mix-blend-mode: screen;
+    background: url('../../../assets/images/newsletter.jpg') bottom/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: .4;
+  }
+
+  input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    padding: 0 2rem;
+    color: white;
+    border-radius: 0;
+  }
+}

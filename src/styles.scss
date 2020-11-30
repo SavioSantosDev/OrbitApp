@@ -2,12 +2,12 @@
 
 @font-face {
   font-family: 'CircularStd';
-  src: url('./assets/fonts/CircularStd-Book.otf') format('truetype');
+  src: url('./assets/fonts/CircularStd-Book.otf');
   font-weight: normal;
 }
 @font-face {
   font-family: 'CircularStd';
-  src: url('./assets/fonts/CircularStd-Bold.otf') format('truetype');
+  src: url('./assets/fonts/CircularStd-Bold.otf');
   font-weight: bold;
 }
 
@@ -15,4 +15,47 @@
 body {
   font-size: clamp(16px, 1.9vw, 12px);
   line-height: clamp(16px, 1.9vw, 12px);
+  overflow-x: hidden;
+}
+
+
+// h1 - Utilizando para o CTA principal logo de inicio
+// h2 - Para titulos de seções
+// h3 - Para titulos em componentes dentro de seções
+// h4 - Subtitulo de seções, fica por cima do h2 e da cor primary
+
+h1 { line-height: clamp(88px, 9.3vw, 48px); }
+h2 { line-height: clamp(44px, 5.2vw, 32px); }
+h3 { line-height: clamp(32px, 3.6vw, 24px); }
+h4 { line-height: clamp(16px, 2.0vw, 14px); }
+
+p {
+  line-height: clamp(24px, 2.8vw, 16px);
+}
+
+ul {
+  list-style: none;
+}
+
+
+.btn.btn-primary {
+  color: white;
+  box-shadow: 0 4px 8px rgba($color: $primary, $alpha: .32);
+}
+
+.btn-lg.btn-primary {
+  color: white;
+  box-shadow: 0 8px 16px rgba($color: $primary, $alpha: .48);
+  border: none;
+}
+
+.btn.btn-secondary {
+  color: white;
+  box-shadow: 0 4px 8px rgba($color: $secondary, $alpha: .32);
+}
+
+.btn-lg.btn-secondary {
+  color: white;
+  box-shadow: 0 8px 16px rgba($color: $secondary, $alpha: .48);
+  border: none;
 }

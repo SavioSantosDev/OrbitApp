@@ -1,0 +1,23 @@
+section {
+
+  .iPhones {
+    position: relative;
+    height: 480px;
+    overflow-y: hidden;
+
+    .iPhone1, .iPhone2 {
+      position: absolute;
+      top: 0;
+    }
+
+    .iPhone1 {
+      left: 0;
+    }
+
+    .iPhone2 {
+      right: 0;
+      transform: translateY(20%);
+    }
+
+  }
+}

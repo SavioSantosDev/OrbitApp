@@ -1,0 +1,24 @@
+@import "../../../styles/utilities";
+
+svg {
+  display: none;
+}
+
+.primary{
+  fill: $primary;
+}
+.white{
+  fill:#FFFFFF;
+}
+.dark{
+  fill: $dark;
+}
+.cls1{
+  fill:#FFF780;
+}
+.cls2{
+  fill:#FFC02E;
+}
+.cls3{
+  fill:#FFA73B;
+}
